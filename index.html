@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>وصفات DXN العلاجية - منتجات طبيعية 100%</title>
+  <meta name="description" content="اكتشف وصفات DXN العلاجية الطبيعية لتقوية المناعة، زيادة الطاقة، التخسيس الصحي، وعلاج طبيعي للبشرة والشعر. منتجات طبيعية 100% من فطر الجانوديرما والإسبيرولينا">
+  <meta name="keywords" content="DXN, وصفات علاجية, منتجات طبيعية, جانوديرما, إسبيرولينا, صحة, علاج طبيعي, تقوية المناعة">
+  <meta name="author" content="وصفات DXN"><!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="وصفات DXN العلاجية - منتجات طبيعية 100%">
+  <meta property="og:description" content="اكتشف وصفات DXN العلاجية الطبيعية لتقوية المناعة، زيادة الطاقة، التخسيس الصحي. منتجات طبيعية 100% من فطر الجانوديرما 🍄">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%23059669;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad)' width='1200' height='630'/%3E%3Ctext x='600' y='250' font-size='80' font-weight='bold' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3E🍄 وصفات DXN 🍄%3C/text%3E%3Ctext x='600' y='350' font-size='48' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3Eمنتجات طبيعية 100%25%3C/text%3E%3Ctext x='600' y='450' font-size='36' text-anchor='middle' fill='rgba(255,255,255,0.9)' font-family='Arial, sans-serif'%3Eصحة • طاقة • حيوية%3C/text%3E%3C/svg%3E">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="وصفات DXN العلاجية - منتجات طبيعية"><!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="وصفات DXN العلاجية - منتجات طبيعية 100%">
+  <meta name="twitter:description" content="اكتشف وصفات DXN العلاج��ة الطبيعية لتقوية المناعة، زيادة الطاقة، التخسيس الصحي 🍄">
+  <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%23059669;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23grad)' width='1200' height='630'/%3E%3Ctext x='600' y='250' font-size='80' font-weight='bold' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3E🍄 وصفات DXN 🍄%3C/text%3E%3Ctext x='600' y='350' font-size='48' text-anchor='middle' fill='white' font-family='Arial, sans-serif'%3Eمنتجات طبيعية 100%25%3C/text%3E%3Ctext x='600' y='450' font-size='36' text-anchor='middle' fill='rgba(255,255,255,0.9)' font-family='Arial, sans-serif'%3Eصحة • طاقة • حيوية%3C/text%3E%3C/svg%3E"><!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍄%3C/text%3E%3C/svg%3E">
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="/_sdk/data_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+        
+        * {
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .recipe-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 100%;
+            max-height: 90%;
+            overflow-y: auto;
+        }
+        
+        .earnings-counter {
+            font-family: 'Courier New', monospace;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #10b981;
+            color: white;
+            padding: 16px 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 2000;
+            display: none;
+        }
+        
+        .toast.show {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+        
+        .toast.error {
+            background: #ef4444;
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes shine {
+            0% {
+                left: -100%;
+            }
+            20%, 100% {
+                left: 100%;
+            }
+        }
+        
+        .shine-effect {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .shine-effect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            animation: shine 3s infinite;
+            z-index: 1;
+        }
+        
+        @keyframes borderShine {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        .border-shine {
+            position: relative;
+            border-radius: 12px;
+        }
+        
+        .border-shine::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            background: linear-gradient(45deg, #10b981, #3b82f6, #8b5cf6, #ec4899, #f59e0b, #10b981);
+            background-size: 400%;
+            border-radius: 12px;
+            z-index: -1;
+            animation: borderShine 3s linear infinite;
+            filter: blur(8px);
+        }
+        
+        .header-gradient {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .product-page {
+            display: none;
+        }
+        
+        .product-page.active {
+            display: block;
+        }
+        
+        .home-page.hidden {
+            display: none;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .withdraw-btn-disabled {
+            opacity: 0.6;
+            cursor: not-allowed !important;
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+ </head>
+ <body class="w-full min-h-full">
+  <div id="app" class="w-full min-h-full" style="background: #ffffff;"><!-- Home Page -->
+   <div id="homePage" class="home-page"><!-- Header -->
+    <header class="w-full header-gradient" style="position: relative;">
+     <div style="max-width: 1200px; margin: 0 auto; padding: 32px 20px;"><!-- Logo and Title Section -->
+      <div style="text-align: center; margin-bottom: 32px;">
+       <div style="display: inline-block;   border-radius: 50%; width: 100px; height: 100px; display: flex; align-items: center; justify-content: center;   margin-bottom: 16px;"><span style="font-size: 60px;"><img src="logo.png" alt="" srcset=""></span>
+       </div>
+       <h1 id="siteTitle" style="font-size: 2.5rem; font-weight: 700; color: white; margin-bottom: 8px; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">وصفات DXN العلاجية</h1>
+       <p id="siteSubtitle" style="color: rgba(255,255,255,0.95); font-size: 1.125rem; font-weight: 500;">وصفات طبيعية لحياة صحية</p>
+       <div style="margin-top: 12px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;"><span style="color: rgba(255,255,255,0.9); font-size: 0.95rem;">✨ منتجات طبيعية 100%</span> <span style="color: rgba(255,255,255,0.9); font-size: 0.95rem;">🌿 جودة عالية</span> <span style="color: rgba(255,255,255,0.9); font-size: 0.95rem;">💚 صحة وعافية</span>
+       </div>
+      </div><!-- Earnings & Stats Cards -->
+      <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; align-items: stretch; margin-bottom: 28px;">
+       <div style="background: white; padding: 20px 28px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); flex: 1; min-width: 200px; max-width: 280px;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="font-size: 2rem;">💰</span>
+         <div style="color: #6b7280; font-size: 0.875rem; font-weight: 600;">
+          الأرباح  الحالية
+         </div>
+        </div>
+        <div id="earningsDisplay" class="earnings-counter" style="color: #10b981; font-size: 1.5rem;">
+         $0.00000000
+        </div>
+       </div>
+       <div style="background: white; padding: 20px 28px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); flex: 1; min-width: 200px; max-width: 280px;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="font-size: 2rem;">📊</span>
+         <div style="color: #6b7280; font-size: 0.875rem; font-weight: 600;">
+          عدد المشاركات
+         </div>
+        </div>
+        <div id="shareCountDisplay" class="earnings-counter" style="color: #10b981; font-size: 1.5rem;">
+         0
+        </div>
+       </div>
+      </div><!-- Action Buttons -->
+      <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;"><button id="shareBtn" class="border-shine shine-effect" style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white; padding: 16px 40px; border-radius: 12px; font-weight: 700; font-size: 1.125rem; border: none; cursor: pointer; box-shadow: 0 6px 20px rgba(139,92,246,0.4); transition: all 0.3s; position: relative; z-index: 1;"> <span style="position: relative; z-index: 2; display: flex; align-items: center; gap: 8px;"> <span>📤</span> <span>   شارك و أربح</span> </span> </button> <button id="withdrawBtn" class="shine-effect" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 16px 40px; border-radius: 12px; font-weight: 700; font-size: 1.125rem; border: none; cursor: pointer; box-shadow: 0 6px 20px rgba(245,158,11,0.4); transition: all 0.3s; opacity: 0.6; position: relative; z-index: 1;"> <span style="position: relative; z-index: 2; display: flex; align-items: center; gap: 8px;"> <span>💰</span> <span>سحب الأرباح</span> </span> </button>
+      </div>
+     </div><!-- Decorative Wave -->
+     <svg style="position: absolute; bottom: -1px; left: 0; width: 100%;" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 120"><path fill="#ffffff" d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
+     </svg>
+    </header><!-- Recipes Grid -->
+    <main style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
+     <div style="text-align: center; margin-bottom: 40px;">
+      <h2 style="font-size: 2rem; font-weight: 700; color: #1f2937; margin-bottom: 12px;">وصفاتنا العلاجية المميزة</h2>
+      <p style="color: #6b7280; font-size: 1.125rem;">اختر الوصفة المناسبة لاحتياجاتك الصحية</p>
+      <div style="width: 80px; height: 4px; background: linear-gradient(90deg, #10b981, #059669); margin: 16px auto; border-radius: 2px;"></div>
+     </div>
+     <div id="recipesGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px;"><!-- Recipe cards will be inserted here -->
+     </div>
+    </main>
+   </div><!-- Product Page -->
+   <div id="productPage" class="product-page">
+    <div style="max-width: 900px; margin: 0 auto; padding: 20px;"><button id="backBtn" style="background: white; color: #6b7280; padding: 10px 20px; border-radius: 8px; border: none; cursor: pointer; margin-bottom: 20px; font-weight: 600;"> ← العودة للرئيسية </button>
+     <div style="background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.2);"><img id="productImage" style="width: 100%; height: 350px; object-fit: cover;" alt="Product">
+      <div style="padding: 32px;">
+       <h2 id="productTitle" style="font-size: 2rem; font-weight: 700; color: #1f2937; margin-bottom: 8px;"></h2>
+       <p id="productSubtitle" style="color: #6b7280; font-size: 1.125rem; margin-bottom: 16px;"></p>
+       <div id="productPrice" style="font-size: 1.875rem; font-weight: 700; color: #10b981; margin-bottom: 24px;"></div>
+       <div id="productDescription" style="color: #4b5563; line-height: 1.8; margin-bottom: 32px;"></div>
+       <div id="productVideoContainer" class="video-container" style="margin-bottom: 32px; display: none;"><iframe id="productVideo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div><button id="orderBtn" style="width: 100%; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 16px; border-radius: 12px; font-size: 1.25rem; font-weight: 700; border: none; cursor: pointer; box-shadow: 0 4px 12px rgba(16,185,129,0.3); transition: transform 0.2s;"> طلب الوصفة 🛒 </button>
+      </div>
+     </div>
+    </div>
+   </div><!-- Share Modal -->
+   <div id="shareModal" class="modal">
+    <div class="modal-content" style="padding: 32px;">
+     <h3 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 24px; text-align: center;">مشاركة الموقع</h3><!-- Verification Section -->
+     <div id="verificationSection" style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin-bottom: 24px;">
+      <p style="color: #374151; font-weight: 600; margin-bottom: 12px; text-align: center;">للتحقق من أنك لست روبوت، حل المعادلة التالية:</p>
+      <div style="text-align: center; margin-bottom: 16px;"><span id="mathQuestion" style="font-size: 1.5rem; font-weight: 700; color: #1f2937;"></span>
+      </div>
+      <div style="display: flex; gap: 8px; align-items: center;"><input type="number" id="mathAnswer" placeholder="أدخل الإجابة" style="flex: 1; padding: 12px; border: 2px solid #d1d5db; border-radius: 8px; font-size: 1rem; text-align: center;"> <button onclick="verifyAnswer()" style="background: #10b981; color: white; padding: 12px 24px; border-radius: 8px; border: none; cursor: pointer; font-weight: 600;"> تحقق ✓ </button>
+      </div>
+      <div id="verificationError" style="color: #ef4444; font-size: 0.875rem; margin-top: 8px; text-align: center; display: none;"></div>
+     </div>
+     <div id="shareButtons" style="display: none;">
+      <div style="display: grid; gap: 12px; margin-bottom: 24px;"><button onclick="shareToFacebook()" style="background: #1877f2; color: white; padding: 14px; border-radius: 8px; border: none; cursor: pointer; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px;"> <span>📘</span> مشاركة على فيسبوك </button> <button onclick="shareToWhatsApp()" style="background: #25d366; color: white; padding: 14px; border-radius: 8px; border: none; cursor: pointer; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px;"> <span>📱</span> مشاركة على واتساب </button> <button onclick="shareToTelegram()" style="background: #0088cc; color: white; padding: 14px; border-radius: 8px; border: none; cursor: pointer; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px;"> <span>✈️</span> مشاركة على تيليجرام </button> <button onclick="copyLink()" style="background: #6b7280; color: white; padding: 14px; border-radius: 8px; border: none; cursor: pointer; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px;"> <span>🔗</span> نسخ الرابط </button>
+      </div>
+     </div><button onclick="closeModal('shareModal')" style="width: 100%; background: #e5e7eb; color: #4b5563; padding: 12px; border-radius: 8px; border: none; cursor: pointer; font-weight: 600;"> إغلاق </button>
+    </div>
+   </div><!-- Minimum Withdrawal Modal -->
+   <div id="minWithdrawModal" class="modal">
+    <div class="modal-content" style="padding: 32px; text-align: center;">
+     <div style="font-size: 3rem; margin-bottom: 16px;">
+      💰
+     </div>
+     <h3 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 16px;">الحد الأدنى للسحب</h3>
+     <p style="color: #6b7280; font-size: 1.125rem; margin-bottom: 8px;">الحد الأدنى لطلب السحب هو:</p>
+     <div style="font-size: 2rem; font-weight: 700; color: #f59e0b; margin-bottom: 16px;">
+      $1.00
+     </div>
+     <p style="color: #6b7280; margin-bottom: 24px;">رصيدك الحالي: <strong id="currentEarningsText">$0.00000000</strong></p>
+     <p style="color: #374151; margin-bottom: 24px;">استمر في مشاركة الموقع للوصول إلى الحد الأدنى! 🚀</p><button onclick="closeModal('minWithdrawModal')" style="width: 100%; background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white; padding: 14px; border-radius: 8px; border: none; cursor: pointer; font-weight: 600;"> حسناً، سأواصل المشاركة! </button>
+    </div>
+   </div><!-- Withdrawal Modal -->
+   <div id="withdrawModal" class="modal">
+    <div class="modal-content" style="padding: 32px;">
+     <h3 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 24px; text-align: center;">طلب سحب الأرباح</h3>
+     <form id="withdrawForm" style="display: grid; gap: 16px;">
+      <div><label style="display: block; color: #374151; font-weight: 600; margin-bottom: 8px;">طريقة الدفع</label> <input type="text" id="withdrawMethod" placeholder="مثل: Payeer, Binance, USDT" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 1rem;">
+      </div>
+      <div><label style="display: block; color: #374151; font-weight: 600; margin-bottom: 8px;">رقم الحساب / المحفظة</label> <input type="text" id="withdrawAccount" placeholder="أدخل رقم حسابك" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 1rem;">
+      </div>
+      <div><label style="display: block; color: #374151; font-weight: 600; margin-bottom: 8px;">ملاحظات (اختياري)</label> <textarea id="withdrawNotes" rows="3" placeholder="أي ملاحظات إضافية" style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 1rem; resize: vertical;"></textarea>
+      </div><button type="submit" id="submitWithdrawBtn" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 14px; border-radius: 8px; font-weight: 700; border: none; cursor: pointer;"> تقديم طلب السحب </button> <button type="button" onclick="closeModal('withdrawModal')" style="background: #e5e7eb; color: #4b5563; padding: 12px; border-radius: 8px; border: none; cursor: pointer; font-weight: 600;"> إلغاء </button>
+     </form>
+    </div>
+   </div><!-- Order Modal -->
+   <div id="orderModal" class="modal">
+    <div class="modal-content" style="padding: 32px;">
+     <h3 style="font-size: 1.5rem; font-weight: 700; color: #1f2937; margin-bottom: 24px; text-align: center;">طلب الوصفة</h3>
+     <form id="orderForm" style="display: grid; gap: 16px;">
+      <div><label style="display: block; color: #374151; font-weight: 600; margin-bottom: 8px;">الاسم الكامل</label> <input type="text" id="orderName" placeholder="أدخل اسمك الكامل" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 1rem;">
+      </div>
+      <div><label style="display: block; color: #374151; font-weight: 600; margin-bottom: 8px;">العنوان / البلد</label> <input type="text" id="orderAddress" placeholder="أدخل عنوانك" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 1rem;">
+      </div>
+      <div><label style="display: block; color: #374151; font-weight: 600; margin-bottom: 8px;">رقم الهاتف</label> <input type="tel" id="orderPhone" placeholder="أدخل رقم هاتفك" required style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 1rem;">
+      </div>
+      <div><label style="display: block; color: #374151; font-weight: 600; margin-bottom: 8px;">ملاحظات (اختياري)</label> <textarea id="orderNotes" rows="3" placeholder="أي ملاحظات إضافية" style="width: 100%; padding: 12px; border: 2px solid #e5e7eb; border-radius: 8px; font-size: 1rem; resize: vertical;"></textarea>
+      </div><button type="submit" id="submitOrderBtn" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 14px; border-radius: 8px; font-weight: 700; border: none; cursor: pointer;"> إرسال الطلب </button> <button type="button" onclick="closeModal('orderModal')" style="background: #e5e7eb; color: #4b5563; padding: 12px; border-radius: 8px; border: none; cursor: pointer; font-weight: 600;"> إلغاء </button>
+     </form>
+    </div>
+   </div><!-- Toast Notification -->
+   <div id="toast" class="toast"></div>
+  </div>
+  <script>
+       const defaultConfig = {
+            site_title: "موقع وصفة الحياة    ",
+            site_subtitle: "وصفات طبيعية لحياة صحية",
+            order_email: "dxnfamilyy@gmail.com",
+            withdrawal_email: "dxnfamilyy@gmail.com",
+            email_service_id: "service_x5b588t",
+            email_template_id_order: "template_fp5s8az",
+            email_template_id_withdrawal: "template_fp5s8az",
+            email_public_key: "fBtjEMu8f1TbeAsuE",
+            background_color: "#667eea",
+            surface_color: "#ffffff",
+            text_color: "#1f2937",
+            primary_action_color: "#10b981",
+            secondary_action_color: "#8b5cf6"
+        };
+
+        let shareCount = 0;
+        let earnings = 0;
+        let currentRecordCount = 0;
+        const EARNINGS_PER_SHARE = 0.00000001;
+        const WITHDRAWAL_THRESHOLD = 1.0;
+        let mathNum1 = 0;
+        let mathNum2 = 0;
+        let isVerified = false;
+        
+        const STORAGE_KEY_SHARES = 'dxn_share_count';
+        const STORAGE_KEY_EARNINGS = 'dxn_earnings';
+        
+        const recipes = [
+            {
+                id: 1,
+                title: "وصفة    الخصوبة وعلاج العقم (للرجال والنساء)",
+                subtitle: " برنامج طبيعي شامل لتنشيط الهرمونات وتحسين جودة البويضات والحيوانات المنوية        ",
+                price: "$295.00",
+                image: "https://eajazcenter.com/assets/media/46blob",
+                description: "برنامج علاج العقم بمنتجات DXN يشمل: ريشي RG/GL لتنظيم الهرمونات (2+2 يوميًا لمدة 3 أشهر)، سبيرولينا لدعم الخصوبة (6–10 حبات يوميًا)، زيت جانو لتحسين الصحة الهرمونية (ملعقة صباحًا ومساءً)، كورديسيبس لزيادة الطاقة وتحسين جودة الحيوانات المنوية والبويضات (2–4 كبسولات يوميًا)، وشراب المورنزي لتنشيط الجسم وتحسين الامتصاص (30 مل صباحًا ومساءً)، ويستمر البرنامج من 3 إلى 6 أشهر لتحقيق أفضل نتائج.",
+                videoId: "iRaWQZNenN8"
+            },
+            {
+                id: 2,
+                title: " وصفة علاج القلب و الشرايين    ",
+                subtitle: " برنامج دعم صحة القلب من DXN يعتمد على منتجات طبيعية تساعد في تقوية الدورة الدموية، خفض الإجهاد التأكسدي، دعم الصحة العامة للشرايين، وتنظيم ضغط الدم عبر تغذية الجسم ومساعدته على العمل بكفاءة.    ",
+                price: "$267.00",
+                image: "https://static.webteb.net/images/content/tbl_articles_article_24513_60683f62c39-92f9-4857-ac19-91c4bc846674.jpg",
+                description: " برنامج دعم صحة القلب من DXN يعتمد على منتجات طبيعية تساعد في تقوية الدورة الدموية، خفض الإجهاد التأكسدي، دعم الصحة العامة للشرايين، وتنظيم ضغط الدم عبر تغذية الجسم ومساعدته على العمل بكفاءة.وصفة دعم صحة القلب بمنتجات DXN تشمل: ريشي RG/GL لتعزيز الدورة الدموية، سبيرولينا لخفض الدهون ودعم القلب، مورينزي لتنظيم الضغط وتحسين الشرايين، زيت جانو لتحسين الكوليسترول، وكورديسيبس لرفع الأكسجين وتقوية أداء القلب، ويستمر البرنامج لمدة 3–6 أشهر لتحقيق أفضل دعم لصحة القلب.",
+                videoId: "d77oS5JQe-8"
+            },
+            {
+                id: 3,
+                title: " علاج مشاكل المناعة بمنتجات DXN (برنامج تقوية المناعة)    ",
+                subtitle: " برنامج دعم المناعة من DXN يعتمد على منتجات طبيعية تساعد في رفع قوة الجهاز المناعي، زيادة مقاومة الجسم للأمراض، وتنشيط الطاقة الخلوية عبر تغذية الجسم وتقليل السموم والالتهابات.    ",
+                price: "$322.00",
+                image: "https://img.youm7.com/large/20191022125203523.jpg",
+                description: " برنامج تقوية المناعة من DXN يعتمد على: ريشي RG/GL لتنشيط المناعة وتنقية الجسم، سبيرولينا لرفع الفيتامينات والبروتينات، فيتامين C الفوار لتعزيز الدفاعات الطبيعية، عصير المورينزي لتحسين الامتصاص وتقليل الالتهابات، وكورديسيبس لزيادة الطاقة المناعية والأكسجة الخلوية، ويُنصح بالاستمرار لمدة 1–3 أشهر للحصول على أفضل دعم للمناعة. ",
+                videoId: "NPxZP13YNDQ"
+            },
+            {
+                id: 4,
+                title: "علاج العقم (للرجال و النساء)    ",
+                subtitle: "  برنامج طبيعي شامل لتنشيط الهرمونات وتحسين جودة البويضات والحيوانات المنوية     ",
+                price: "$295.00",
+                image: "https://png.pngtree.com/thumb_back/fh260/background/20210903/pngtree-newborn-baby-cute-baby-portrait-children-photography-map-with-pictures-image_795146.jpg",
+                description: " برنامج علاج العقم بمنتجات DXN يشمل: ريشي RG/GL لتنظيم الهرمونات (2+2 يوميًا لمدة 3 أشهر)، سبيرولينا لدعم الخصوبة (6–10 حبات يوميًا)، زيت جانو لتحسين الصحة الهرمونية (ملعقة صباحًا ومساءً)، كورديسيبس لزيادة الطاقة وتحسين جودة الحيوانات المنوية والبويضات (2–4 كبسولات يوميًا)، وشراب المورنزي لتنشيط الجسم وتحسين الامتصاص (30 مل صباحًا ومساءً)، ويستمر البرنامج من 3 إلى 6 أشهر لتحقيق أفضل نتائج.",
+                videoId: "iRaWQZNenN8"
+            },
+            {
+                id: 5,
+                title: " وصفة علاج الشقيقة    ",
+                subtitle: " برنامج طبيعي يوفر العلاج النهائي باذن الله    ",
+                price: "$219.00",
+                image: "https://static.webteb.net/images/content/tbl_articles_article_1758_457.jpg",
+                description: " برنامج دعم علاج الشقيقة من DXN يشمل: ريشي RG/GL لتقليل الالتهابات وتنشيط الدورة الدموية، سبيرولينا لتعويض نقص المغذيات وتحسين الطاقة، مورينزي لتهدئة الأعصاب وتنظيم ضغط الدم، ليمون الفيتامين C الفوار لتقليل الإجهاد التأكسدي، وكورديسيبس لتحسين تدفق الأكسجين وتقليل التوتر العصبي، ويُنصح بالاستمرار من 1 إلى 3 أشهر لتحسين استجابة الجسم وتقليل نوبات الصداع.",
+                videoId: "itH4EFCzkeE"
+            },
+            {
+                id: 6,
+                title: " علاج مشاكل وبكتيريا المعدة    ",
+                subtitle: " برنامج دعم المعدة من DXN    ",
+                price: "$195.00",
+                image: "https://static.webteb.net/images/content/slideshowslide_sss_10735_911b8b991c5-3729-4338-a468-e4a38766d0ee.jpg",
+                description: " برنامج دعم المعدة من DXN يشمل: مورينزي (إنزيمات النوني) لتهدئة المعدة وتقليل الالتهابات، سبيرولينا لمعادلة الحموضة وإعادة توازن الجهاز الهضمي، ريشي RG/GL لتنقية الجسم وتقليل التهيج الهضمي، عصير ألوفيرا DXN لشفاء بطانة المعدة ودعم الهضم، وبروجيا (عسل النحل + الغانوديرما) لتهدئة الألم ومقاومة البكتيريا، ويُنصح بالاستمرار لمدة 1–3 أشهر لتحسين صحة المعدة وتقليل الأعراض المرتبطة بالبكتيريا.",
+                videoId: "gbMMkD34nkI"
+            },
+            {
+                id: 7,
+                title: "  علاج مشاكل و حصى الكلى    ",
+                subtitle: " برنامج  طبيعي علاج الكلى من DXN    ",
+                price: "$235.00",
+                image: "https://static.webteb.net/images/content/tbl_diseases_disease_129_105.jpg",
+                description: " برنامج دعم الكلى من DXN يشمل: مورينزي لزيادة إدرار البول وتنظيف الكلى، ريشي RG/GL لتقليل الالتهابات ودعم تفتيت الترسبات، سبيرولينا لتعويض المعادن وتنظيف الجسم من السموم، كورديسيبس لتنشيط وظائف الكلى ورفع كفاءتها، وليمون الفيتامين C الفوار لزيادة قلوية الجسم وتقليل تشكل الحصى، ويُنصح بالاستمرار 1–3 أشهر مع شرب كميات كافية من الماء يوميًا.",
+                videoId: "sGhIylg2utI"
+            }
+        ];
+        
+        let currentRecipe = null;
+
+        const dataHandler = {
+            onDataChanged(data) {
+                currentRecordCount = data.length;
+            }
+        };
+
+        function loadProgress() {
+            const savedShares = localStorage.getItem(STORAGE_KEY_SHARES);
+            const savedEarnings = localStorage.getItem(STORAGE_KEY_EARNINGS);
+            
+            if (savedShares !== null) {
+                shareCount = parseInt(savedShares, 10);
+            }
+            
+            if (savedEarnings !== null) {
+                earnings = parseFloat(savedEarnings);
+            }
+        }
+
+        function saveProgress() {
+            localStorage.setItem(STORAGE_KEY_SHARES, shareCount.toString());
+            localStorage.setItem(STORAGE_KEY_EARNINGS, earnings.toString());
+        }
+
+        function resetProgress() {
+            shareCount = 0;
+            earnings = 0;
+            saveProgress();
+            updateDisplay();
+        }
+
+        async function onConfigChange(config) {
+            const siteTitle = config.site_title || defaultConfig.site_title;
+            const siteSubtitle = config.site_subtitle || defaultConfig.site_subtitle;
+            
+            document.getElementById('siteTitle').textContent = siteTitle;
+            document.getElementById('siteSubtitle').textContent = siteSubtitle;
+            
+            const bgColor = config.background_color || defaultConfig.background_color;
+            document.getElementById('app').style.background = `linear-gradient(135deg, ${bgColor} 0%, #764ba2 100%)`;
+        }
+
+        function renderRecipes() {
+            const grid = document.getElementById('recipesGrid');
+            grid.innerHTML = '';
+            
+            recipes.forEach(recipe => {
+                const card = document.createElement('div');
+                card.className = 'recipe-card';
+                card.style.cssText = 'background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer;';
+                
+                card.innerHTML = `
+                    <img src="${recipe.image}" alt="${recipe.title}" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 1.25rem; font-weight: 700; color: #1f2937; margin-bottom: 8px;">${recipe.title}</h3>
+                        <div class="star-rating" style="margin-bottom: 8px;">⭐⭐⭐⭐⭐</div>
+                        <p style="color: #6b7280; font-size: 0.875rem;">${recipe.subtitle}</p>
+                    </div>
+                `;
+                
+                card.onclick = () => openProduct(recipe);
+                grid.appendChild(card);
+            });
+        }
+
+        function openProduct(recipe) {
+            currentRecipe = recipe;
+            document.getElementById('homePage').classList.add('hidden');
+            document.getElementById('productPage').classList.add('active');
+            
+            document.getElementById('productImage').src = recipe.image;
+            document.getElementById('productTitle').textContent = recipe.title;
+            document.getElementById('productSubtitle').textContent = recipe.subtitle;
+            document.getElementById('productPrice').textContent = recipe.price;
+            document.getElementById('productDescription').textContent = recipe.description;
+            
+            if (recipe.videoId) {
+                const videoContainer = document.getElementById('productVideoContainer');
+                const videoFrame = document.getElementById('productVideo');
+                videoFrame.src = `https://www.youtube.com/embed/${recipe.videoId}`;
+                videoContainer.style.display = 'block';
+            } else {
+                document.getElementById('productVideoContainer').style.display = 'none';
+            }
+            
+            window.scrollTo(0, 0);
+        }
+
+        function closeProduct() {
+            document.getElementById('homePage').classList.remove('hidden');
+            document.getElementById('productPage').classList.remove('active');
+            document.getElementById('productVideo').src = '';
+            window.scrollTo(0, 0);
+        }
+
+        function updateDisplay() {
+            document.getElementById('shareCountDisplay').textContent = shareCount;
+            document.getElementById('earningsDisplay').textContent = `$${earnings.toFixed(8)}`;
+            
+            const withdrawBtn = document.getElementById('withdrawBtn');
+            if (earnings >= WITHDRAWAL_THRESHOLD) {
+                withdrawBtn.classList.remove('withdraw-btn-disabled');
+                withdrawBtn.style.opacity = '1';
+                withdrawBtn.style.cursor = 'pointer';
+            } else {
+                withdrawBtn.classList.add('withdraw-btn-disabled');
+                withdrawBtn.style.opacity = '0.6';
+                withdrawBtn.style.cursor = 'not-allowed';
+            }
+        }
+
+        function incrementShare() {
+            shareCount++;
+            earnings += EARNINGS_PER_SHARE;
+            saveProgress();
+            updateDisplay();
+            showToast('تمت ��لمشاركة بنجاح! تم إضافة $' + EARNINGS_PER_SHARE.toFixed(8) + ' إلى رصيدك');
+        }
+
+        function shareToFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'noopener,noreferrer');
+            incrementShare();
+            closeModal('shareModal');
+        }
+
+        function shareToWhatsApp() {
+            const text = encodeURIComponent('اكتشف وصفات DXN العلاجية الطبيعية!');
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://wa.me/?text=${text}%20${url}`, '_blank', 'noopener,noreferrer');
+            incrementShare();
+            closeModal('shareModal');
+        }
+
+        function shareToTelegram() {
+            const text = encodeURIComponent('اكتشف وصفات DXN العلاجية الط��يعية!');
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank', 'noopener,noreferrer');
+            incrementShare();
+            closeModal('shareModal');
+        }
+
+        function copyLink() {
+            try {
+                const tempInput = document.createElement('textarea');
+                tempInput.value = window.location.href;
+                tempInput.style.position = 'fixed';
+                tempInput.style.opacity = '0';
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+                
+                 
+                closeModal('shareModal');
+                showToast('تم نسخ الرابط بنجاح!');
+            } catch (err) {
+                showToast('ف��ل نسخ الرابط. حاول مرة أخرى.');
+            }
+        }
+
+        function generateMathQuestion() {
+            mathNum1 = Math.floor(Math.random() * 20) + 1;
+            mathNum2 = Math.floor(Math.random() * 20) + 1;
+            document.getElementById('mathQuestion').textContent = `${mathNum1} + ${mathNum2} = ؟`;
+        }
+
+        function resetVerification() {
+            isVerified = false;
+            document.getElementById('verificationSection').style.display = 'block';
+            document.getElementById('shareButtons').style.display = 'none';
+            document.getElementById('mathAnswer').value = '';
+            document.getElementById('verificationError').style.display = 'none';
+            generateMathQuestion();
+        }
+
+        function verifyAnswer() {
+            const userAnswer = parseInt(document.getElementById('mathAnswer').value);
+            const correctAnswer = mathNum1 + mathNum2;
+            
+            if (userAnswer === correctAnswer) {
+                isVerified = true;
+                document.getElementById('verificationSection').style.display = 'none';
+                document.getElementById('shareButtons').style.display = 'block';
+                showToast('تم التحقق بنجاح! يمكنك الآن المشاركة');
+            } else {
+                document.getElementById('verificationError').textContent = 'الإجابة خاطئة، حاول مرة أخرى';
+                document.getElementById('verificationError').style.display = 'block';
+                generateMathQuestion();
+                document.getElementById('mathAnswer').value = '';
+            }
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.add('active');
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('active');
+        }
+
+        function showToast(message, isError = false) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.remove('error');
+            if (isError) {
+                toast.classList.add('error');
+            }
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+        }
+
+        function handleWithdrawClick() {
+            if (earnings >= WITHDRAWAL_THRESHOLD) {
+                openModal('withdrawModal');
+            } else {
+                document.getElementById('currentEarningsText').textContent = `$${earnings.toFixed(8)}`;
+                openModal('minWithdrawModal');
+            }
+        }
+
+        async function sendEmailViaEmailJS(templateId, templateParams) {
+            const config = window.elementSdk ? window.elementSdk.config : defaultConfig;
+            const serviceId = config.email_service_id || defaultConfig.email_service_id;
+            const publicKey = config.email_public_key || defaultConfig.email_public_key;
+            
+            if (!window.emailjs) {
+                throw new Error('EmailJS library not loaded');
+            }
+            
+            return emailjs.send(serviceId, templateId, templateParams, publicKey);
+        }
+
+        async function handleWithdrawal(event) {
+            event.preventDefault();
+            
+            const submitBtn = document.getElementById('submitWithdrawBtn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'جاري الإرسال...';
+            submitBtn.disabled = true;
+            
+            try {
+                const method = document.getElementById('withdrawMethod').value;
+                const account = document.getElementById('withdrawAccount').value;
+                const notes = document.getElementById('withdrawNotes').value;
+                
+                const config = window.elementSdk ? window.elementSdk.config : defaultConfig;
+                const templateId = config.email_template_id_withdrawal || defaultConfig.email_template_id_withdrawal;
+                const toEmail = config.withdrawal_email || defaultConfig.withdrawal_email;
+                
+                const templateParams = {
+                    to_email: toEmail,
+                    payment_method: method,
+                    account_number: account,
+                    withdrawal_amount: `$${earnings.toFixed(8)}`,
+                    earnings_amount: earnings.toFixed(8),
+                    total_shares: shareCount,
+                    earnings_per_share: EARNINGS_PER_SHARE.toFixed(8),
+                    withdrawal_notes: notes || 'لا توجد ملاحظات',
+                    withdrawal_date: new Date().toLocaleString('ar-SA'),
+                    withdrawal_time: new Date().toLocaleTimeString('ar-SA'),
+                    request_status: 'قيد المراجعة'
+                };
+                
+                await sendEmailViaEmailJS(templateId, templateParams);
+                
+                resetProgress();
+                
+                document.getElementById('withdrawForm').reset();
+                closeModal('withdrawModal');
+                
+                showToast('✅ تم إرسال طلب الس��ب بنجاح! تم تصفير العداد للبدء من جديد.');
+                
+            } catch (error) {
+                console.error('Error sending withdrawal email:', error);
+                showToast('❌ ح��ث خطأ أثناء إرسال الطلب. ير��ى التحقق من إعدادات ال��ريد الإلكتروني أو المحاولة لاحقاً.', true);
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        }
+
+        async function handleOrder(event) {
+            event.preventDefault();
+            
+            if (currentRecordCount >= 999) {
+                showToast('تم الوصول إلى الحد الأقصى من الطلبات (999). يرجى الانتظار حتى تتم معالجة الطلبات الحالية.', true);
+                return;
+            }
+            
+            const submitBtn = document.getElementById('submitOrderBtn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'جاري الإرسال...';
+            submitBtn.disabled = true;
+            
+            try {
+                const name = document.getElementById('orderName').value;
+                const address = document.getElementById('orderAddress').value;
+                const phone = document.getElementById('orderPhone').value;
+                const notes = document.getElementById('orderNotes').value;
+                
+                const config = window.elementSdk ? window.elementSdk.config : defaultConfig;
+                const templateId = config.email_template_id_order || defaultConfig.email_template_id_order;
+                const toEmail = config.order_email || defaultConfig.order_email;
+                
+                const templateParams = {
+                    to_email: toEmail,
+                    customer_name: name,
+                    customer_address: address,
+                    customer_phone: phone,
+                    customer_notes: notes || 'لا توجد ملاحظات',
+                    recipe_id: currentRecipe.id,
+                    recipe_name: currentRecipe.title,
+                    recipe_subtitle: currentRecipe.subtitle,
+                    recipe_price: currentRecipe.price,
+                    recipe_description: currentRecipe.description,
+                    order_date: new Date().toLocaleString('ar-SA'),
+                    order_time: new Date().toLocaleTimeString('ar-SA')
+                };
+                
+                await sendEmailViaEmailJS(templateId, templateParams);
+                
+                if (window.dataSdk) {
+                    const orderData = {
+                        type: 'order',
+                        user_name: name,
+                        address: address,
+                        phone: phone,
+                        notes: notes || '',
+                        recipe_id: currentRecipe.id.toString(),
+                        recipe_name: currentRecipe.title,
+                        timestamp: new Date().toISOString()
+                    };
+                    
+                    const result = await window.dataSdk.create(orderData);
+                    
+                    if (!result.isOk) {
+                        console.error('Failed to save order:', result.error);
+                    }
+                }
+                
+                document.getElementById('orderForm').reset();
+                closeModal('orderModal');
+                
+                showToast('✅ تم إرسال طلبك بنجاح! سنتواصل معك قريباً.');
+                
+            } catch (error) {
+                console.error('Error sending order email:', error);
+                showToast('❌ حدث خطأ أثناء إرسال الطلب. يرجى التحقق من إعدادات البر��د الإلكتروني أو المحاولة لاحقاً.', true);
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        }
+
+        const shareBtn = document.getElementById('shareBtn');
+        shareBtn.onclick = () => {
+            resetVerification();
+            openModal('shareModal');
+        };
+        shareBtn.onmouseenter = () => {
+            shareBtn.style.transform = 'translateY(-3px) scale(1.05)';
+        };
+        shareBtn.onmouseleave = () => {
+            shareBtn.style.transform = 'translateY(0) scale(1)';
+        };
+        
+        const withdrawBtn = document.getElementById('withdrawBtn');
+        withdrawBtn.onclick = handleWithdrawClick;
+        withdrawBtn.onmouseenter = () => {
+            if (earnings >= WITHDRAWAL_THRESHOLD) {
+                withdrawBtn.style.transform = 'translateY(-3px) scale(1.05)';
+            }
+        };
+        withdrawBtn.onmouseleave = () => {
+            withdrawBtn.style.transform = 'translateY(0) scale(1)';
+        };
+        
+        document.getElementById('backBtn').onclick = closeProduct;
+        document.getElementById('orderBtn').onclick = () => openModal('orderModal');
+        document.getElementById('withdrawForm').onsubmit = handleWithdrawal;
+        document.getElementById('orderForm').onsubmit = handleOrder;
+
+        window.onclick = (event) => {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('active');
+            }
+        };
+
+        async function init() {
+            loadProgress();
+            
+            if (window.emailjs) {
+                emailjs.init(defaultConfig.email_public_key);
+            }
+            
+            if (window.dataSdk) {
+                const initResult = await window.dataSdk.init(dataHandler);
+                if (!initResult.isOk) {
+                    console.error('Failed to initialize data SDK');
+                }
+            }
+            
+            if (window.elementSdk) {
+                window.elementSdk.init({
+                    defaultConfig,
+                    onConfigChange,
+                    mapToCapabilities: (config) => ({
+                        recolorables: [
+                            {
+                                get: () => config.background_color || defaultConfig.background_color,
+                                set: (value) => {
+                                    config.background_color = value;
+                                    window.elementSdk.setConfig({ background_color: value });
+                                }
+                            },
+                            {
+                                get: () => config.surface_color || defaultConfig.surface_color,
+                                set: (value) => {
+                                    config.surface_color = value;
+                                    window.elementSdk.setConfig({ surface_color: value });
+                                }
+                            },
+                            {
+                                get: () => config.text_color || defaultConfig.text_color,
+                                set: (value) => {
+                                    config.text_color = value;
+                                    window.elementSdk.setConfig({ text_color: value });
+                                }
+                            },
+                            {
+                                get: () => config.primary_action_color || defaultConfig.primary_action_color,
+                                set: (value) => {
+                                    config.primary_action_color = value;
+                                    window.elementSdk.setConfig({ primary_action_color: value });
+                                }
+                            },
+                            {
+                                get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+                                set: (value) => {
+                                    config.secondary_action_color = value;
+                                    window.elementSdk.setConfig({ secondary_action_color: value });
+                                }
+                            }
+                        ],
+                        borderables: [],
+                        fontEditable: undefined,
+                        fontSizeable: undefined
+                    }),
+                    mapToEditPanelValues: (config) => new Map([
+                        ["site_title", config.site_title || defaultConfig.site_title],
+                        ["site_subtitle", config.site_subtitle || defaultConfig.site_subtitle],
+                        ["order_email", config.order_email || defaultConfig.order_email],
+                        ["withdrawal_email", config.withdrawal_email || defaultConfig.withdrawal_email],
+                        ["email_service_id", config.email_service_id || defaultConfig.email_service_id],
+                        ["email_template_id_order", config.email_template_id_order || defaultConfig.email_template_id_order],
+                        ["email_template_id_withdrawal", config.email_template_id_withdrawal || defaultConfig.email_template_id_withdrawal],
+                        ["email_public_key", config.email_public_key || defaultConfig.email_public_key]
+                    ])
+                });
+            }
+            
+            renderRecipes();
+            updateDisplay();
+            await onConfigChange(window.elementSdk ? window.elementSdk.config : defaultConfig);
+        }
+
+        init();
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a7b0c27639d7141',t:'MTc2NDY4MDg0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
