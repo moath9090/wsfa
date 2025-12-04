@@ -596,32 +596,56 @@
             showToast('تمت المشاركة بنجاح! تم إضافة $' + EARNINGS_PER_SHARE.toFixed(8) + ' إلى رصيدك');
         }
 
-        function shareToFacebook() {
-         const text = encodeURIComponent('اكتشف وصفات DXN العلاجية الطبيعية!');
-         const textT = encodeURIComponent('اربح من المشاركات : https://www.youtube.com/shorts/iQz132R0AWc');
-            const url = encodeURIComponent(window.location.href);
-            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'noopener,noreferrer');
-            incrementShare();
-            closeModal('shareModal');
-        }
+       function shareToFacebook() {
+    const url = encodeURIComponent(window.location.href);
+
+    window.open(
+        `https://www.facebook.com/sharer/sharer.php?u=${url}`,
+        '_blank',
+        'noopener,noreferrer'
+    );
+
+    incrementShare();
+    closeModal('shareModal');
+}
+
 
         function shareToWhatsApp() {
-            const text = encodeURIComponent('اكتشف وصفات DXN العلاجية الطبيعية!');
-         const textT = encodeURIComponent('اربح من المشاركات : https://www.youtube.com/shorts/iQz132R0AWc');
-            const url = encodeURIComponent(window.location.href);
-            window.open(`https://wa.me/?text=${text}%20${url}`, '_blank', 'noopener,noreferrer');
-            incrementShare();
-            closeModal('shareModal');
-        }
+    const text = encodeURIComponent('اكتشف وصفات DXN العلاجية الطبيعية!');
+    const textT = encodeURIComponent('اربح من المشاركات : https://www.youtube.com/shorts/iQz132R0AWc');
+    const url = encodeURIComponent(window.location.href);
+
+    // دمج النصوص مع فاصل سطر
+    const finalText = `${text}%0A${textT}%0A${url}`;
+
+    window.open(
+        `https://wa.me/?text=${finalText}`,
+        '_blank',
+        'noopener,noreferrer'
+    );
+
+    incrementShare();
+    closeModal('shareModal');
+}
+
 
         function shareToTelegram() {
-            const text = encodeURIComponent('اكتشف وصفات DXN العلاجية الطبيعية!');
-         const textT = encodeURIComponent('اربح من المشاركات : https://www.youtube.com/shorts/iQz132R0AWc');
-            const url = encodeURIComponent(window.location.href);
-            window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank', 'noopener,noreferrer');
-            incrementShare();
-            closeModal('shareModal');
-        }
+    const text = encodeURIComponent('اكتشف وصفات DXN العلاجية الطبيعية!');
+    const textT = encodeURIComponent('اربح من المشاركات : https://www.youtube.com/shorts/iQz132R0AWc');
+    const url = encodeURIComponent(window.location.href);
+
+    const finalText = `${text}%0A${textT}`; // دمج النصّين مع سطر جديد
+
+    window.open(
+        `https://t.me/share/url?url=${url}&text=${finalText}`,
+        '_blank',
+        'noopener,noreferrer'
+    );
+
+    incrementShare();
+    closeModal('shareModal');
+}
+
 
         function copyLink() {
             try {
