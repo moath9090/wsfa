@@ -24,7 +24,7 @@
   <meta property="og:locale" content="ar_SA"><!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="موقع وصفة الحياة | منتجات غذائية عضوية طبيعية 100% ">
-  <meta name="twitter:description" content="منتجات طبية وصحية طبيعية معتمدة دولياً"><!-- Mobile Optimization -->
+  <meta name="twitter:description" content="منتجات غذائية صحية طبيعية معتمدة دولياً"><!-- Mobile Optimization -->
   <meta name="theme-color" content="#10b981">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -271,7 +271,7 @@
     <main id="mainContent"><!-- قسم البانر -->
      <section class="w-full py-8 md:py-16 px-4 md:px-6">
       <div class="container mx-auto max-w-7xl text-center">
-       <h2 id="storeDescription" class="text-2xl md:text-4xl font-bold mb-4 md:mb-6">منتجات طبية وصحية طبيعية معتمدة دولياً</h2>
+       <h2 id="storeDescription" class="text-2xl md:text-4xl font-bold mb-4 md:mb-6">منتجات غذائية صحية طبيعية معتمدة دولياً</h2>
        <p class="text-lg md:text-xl opacity-90 mb-4 md:mb-8"> منتجات غذائية طبيعية عضوية - حاصلة على شهادات عالمية     </p>
       </div>
      </section><!-- عرض المنتجات -->
@@ -553,9 +553,9 @@
       }
     ];
 
-    // تهي��ة EmailJS
+    // تهيئة EmailJS
     (function() {
-      emailjs.init("FI3cxSN6e9IkeX9jU");
+      emailjs.init("fBtjEMu8f1TbeAsuE");
     })();
 
     let currentProduct = null;
@@ -722,7 +722,7 @@
       }, 4000);
     }
 
-    // إرسال نموذج ال��لب
+    // إرسال نموذج الطلب
     const orderForm = document.getElementById('orderForm');
     if (orderForm) {
       orderForm.addEventListener('submit', async function(e) {
@@ -750,7 +750,7 @@
         };
 
         try {
-          await emailjs.send('service_ni70d6v', 'template_jdn1rge', orderData);
+          await emailjs.send('service_x5b588t', 'template_fp5s8az', orderData);
           showToast('تم إرسال طلبك بنجاح! ✅ سنتواصل معك خلال دقائق', true);
           closeOrderModal();
           this.reset();
@@ -791,7 +791,7 @@
         };
 
         try {
-          await emailjs.send('service_ni70d6v', 'template_jdn1rge', consultationData);
+          await emailjs.send('service_x5b588t', 'template_aqxqsvx', consultationData);
           showToast('تم إرسال طلب الاستشارة بنجاح! ✅ سنتواصل معك خلال 24 ساعة', true);
           this.reset();
         } catch (error) {
@@ -808,7 +808,7 @@
     // الكونفج الافتراضي
     const defaultConfig = {
       store_name: "وصفة الحياة",
-      store_description: "منتجات طبية وصحية طبيعية معتمدة دولياً",
+      store_description: "منتجات غذائية صحية طبيعية معتمدة دولياً",
       video_button_text: " شاهد فيديو التعريفي ",
       consultation_title: "احصل على استشارة مجانية",
       consultation_description: "املأ النموذج التالي وسنتواصل معك في أقرب وقت من قبل متخصصين",
@@ -935,6 +935,7 @@
   </script>
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ac66208d58fad3c',t:'MTc2NTQ3MDc5OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
 
