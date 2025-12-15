@@ -36,24 +36,73 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><!-- Schema.org Structured Data -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "وصفة الحياة",
-    "description": "موقع متخصص في المنتجات الطبيعية والصحية العضوية",
-    "url": "https://www.anglefxm.com",
-    "telephone": "+9647751233035",
-    "email": "dxnfamilyy@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "IQ",
-      "addressLocality": "اربيل"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.anglefxm.com/#organization",
+      "name": "وصفة الحياة",
+      "alternateName": "وصفة الحياة - الطب البديل والطب الصيني",
+      "url": "https://www.anglefxm.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://wasfahlife.com/logo.png"
+      },
+      "email": "dxnfamilyy@gmail.com",
+      "telephone": "+9647751233035"
     },
-    "openingHours": "Sa-Th 09:00-21:00",
-    "priceRange": "$$$",
-    "image": "https://wasfahlife.com/logo.png"
-  }
-  </script>
+    {
+      "@type": "HealthAndBeautyBusiness",
+      "@id": "https://www.anglefxm.com/#business",
+      "name": "وصفة الحياة",
+      "image": "https://wasfahlife.com/logo.png",
+      "url": "https://www.anglefxm.com",
+      "telephone": "+9647751233035",
+      "priceRange": "$$$",
+      "description": "موقع وصفة الحياة متخصص في الطب البديل والطب الصيني وتقديم منتجات طبيعية وصحية عضوية، مع استشارات مجانية بإشراف مختصين.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IQ",
+        "addressLocality": "أربيل"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Saturday",
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "opens": "09:00",
+        "closes": "21:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/PathofTales",
+        "https://www.instagram.com/maaz_2q",
+        "https://t.me/yourchannel"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.anglefxm.com/#website",
+      "url": "https://www.anglefxm.com",
+      "name": "وصفة الحياة",
+      "publisher": {
+        "@id": "https://www.anglefxm.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.anglefxm.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+
   <script src="/_sdk/element_sdk.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -952,6 +1001,7 @@
   </script>
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ac66208d58fad3c',t:'MTc2NTQ3MDc5OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
+
 
 
 
